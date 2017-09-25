@@ -1,0 +1,32 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace HelloWorldCSharp //namespace contains class, which contains code. This keeps the code organized. i.e.; this is a "bed" for all of your products.
+{
+    class Program //every piece of code should be contained in a class. The class is where you define the object.
+    {
+        static void Main(string[] args) //MainMethod. Main should always be written with a capital "M". Typically, you will have only one Main method.
+        {
+            //input. Request the user to input two numbers. User input will need to be translated via parse to be read.
+            int x, y; //if you get a green underlined warning, do not ignore it. Always fix these warnings to prevent issues down the road.
+
+            Console.WriteLine("Please enter the first number."); //give user instructions for input
+            x = int.Parse(Console.ReadLine()); //using the int.Parse will convert x and get rid of warning previously displayed. This will also now allow the input.
+            Console.WriteLine("Please enter the second number.");
+            y = int.Parse(Console.ReadLine()); //don't hesitate to copy and paste with caution to save yourself time. Save time however you can."A good programmer is a lazy programmer" 
+
+            //(start without debugging when you likely do not yet have room for errors. (Either via Debug menu or shortcut of Ctl + F5 to build without debugging))
+
+            //processing
+
+            int Result = x + y;
+
+            //output
+
+            Console.WriteLine("The result of adding {0} and {1} is {2}" ,x,y,Result); //{0} (etc) are placeholders. Inserting the variables x,y, and Result are output based on whatever input entered. 
+        }
+    }
+}
